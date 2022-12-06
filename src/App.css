@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color:hsla(243,23%,15%,1);
+  background-image:
+  radial-gradient(at 7% 7%, hsla(235,17%,12%,1) 0px, transparent 50%),
+  radial-gradient(at 66% 14%, hsla(214,30%,7%,1) 0px, transparent 50%),
+  radial-gradient(at 35% 69%, hsla(260,20%,11%,1) 0px, transparent 50%),
+  radial-gradient(at 52% 39%, hsla(272,39%,12%,1) 0px, transparent 50%),
+  radial-gradient(at 79% 86%, hsla(197,39%,5%,1) 0px, transparent 50%),
+  radial-gradient(at 84% 66%, hsla(200,38%,8%,1) 0px, transparent 50%),
+  radial-gradient(at 5% 32%, hsla(209,36%,6%,1) 0px, transparent 50%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.contact {
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  font-size: 1.1em;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  padding: 7px 10px 7px 10px;
+  margin: auto;
+  position: fixed;
+  top: 30px;
+  right: 24px;
+  cursor: pointer;
+  animation-name: contactContainerAnimation;
+  animation-duration: 9s;
+  text-decoration: none;
+}
+
+.cookConstruction {
+  background: #0022FF;
+  background: linear-gradient(to right, #0022FF 0%, #00DDFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: textContainerAnimation;
+  animation-duration: 3s;
+}
+
+.logoContainer {
+  animation-name: logoContainerAnimation;
+  animation-duration: 6s;
+}
+
+.logo {
+  animation-name: logoAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logoContainerAnimation {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes logoAnimation {
+  0% {  color: transparent;  
+          text-shadow: 0 0 0 rgb(31, 147, 255);
+        }
+  50% {  color: transparent;  
+        text-shadow: 0 0 0 rgb(31, 42, 255);
+      }
+  100% {
+    color: transparent;  
+    text-shadow: 0 0 0 rgb(31, 147, 255);
+  }
+}
+
+@keyframes contactContainerAnimation {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes textContainerAnimation {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
